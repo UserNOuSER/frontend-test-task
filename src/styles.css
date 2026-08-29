@@ -1,0 +1,145 @@
+ .users-table-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 18px auto 40px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+.users-table thead th {
+    background: #f8fafc;
+    font-weight: 700;
+    cursor: default;
+}
+
+.users-table thead th.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.users-table tbody tr:hover {
+    background: rgba(79,70,229,0.03);
+}
+
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.paginator button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: white;
+}
+
+.th-resizer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    cursor: col-resize;
+}
+
+.users-table th {
+    position: relative;
+}
+
+.th-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: grid;
+    place-items: center;
+    z-index: 9999;
+}
+
+.modal {
+    background: white;
+    border-radius: 12px;
+    max-width: 900px;
+    width: calc(100% - 40px);
+    padding: 18px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-grid {
+    display: flex;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.avatar-wrap img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.error {
+    color: #b91c1c;
+    background: rgba(185,28,28,0.06);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+th {
+    text-align: center;
+    border: 2px solid grey;
+}
+
+tr {
+    border: 2px solid grey;
+}
